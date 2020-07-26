@@ -1,7 +1,7 @@
 /*
  * Allison Snipes
  * Course 605.201.81 Summer 2020
- * Assignment 9 Question 1: NullPointerException
+ * Assignment 9 Question 1: IllegalArgumentException 
  * 
  *  Project Specs:
  *  This programming assignment involves learning about some of the common exceptions that occur in Java programs.
@@ -19,85 +19,11 @@
 /*
  * Here I will set up my classes and subclasses which will be needed to throw the NullPointerExceptionThrown for the Employee class.
  */
-class Name {
-	private String firstName, lastName;
-	
-	public String getF() {
-		return firstName;
-	}
-	
-	public void setF(String firstName) {
-		this.firstName = firstName;
-	}
-	
-	public String getL() {
-		return lastName;
-	}
-	
-	public void setL(String lastName) {
-		this.lastName = lastName;
-	}
-	
-	public Name(String firstName, String lastName) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-	
-	public String toString() {
-		return firstName + " " + lastName;
-	}
-}
-
-class Address{
-	
-}
-
-class Employee {
-	private int id;
-	private Name name;
-	private Address address;
-	
-	public int getId() {
-		return id;
-	}
-	
-	public void setId() {
-		this.id = id;
-	}
-	
-	public Name getName() {
-		return name;
-	}
-	
-	public void setName() {
-		this.name = name;
-	}
-	
-	public Address getAddress() {
-		return address;
-	}
-	
-	public void setAddress() {
-		this.address = address;
-	}
-	
-	public Employee (int id, Name name, Address address) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.address = address;
-	}
-}
-
-
-/*
- * The main method where the condition occurs to throw the exception.
- */
-public class NullPointerExceptionThrown {
+public class IllegalArgumentException {
 
 	public static void main(String[] args) {
 		headerMsg();
+
 	}
 	
 	public static void headerMsg() {
