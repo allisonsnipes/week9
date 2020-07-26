@@ -19,7 +19,7 @@
 /*
  * Here I will set up my classes and subclasses which will be needed to throw the NullPointerExceptionThrown for the Employee class.
  */
-public class ArrayIndexOutOfBoundsException {
+public class ArrayIndexOutOfBoundsExceptionCatch {
 
 	public static void main(String[] args) {
 		headerMsg();

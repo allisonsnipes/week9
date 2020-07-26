@@ -45,7 +45,7 @@ class Name {
 /*
  * The main method where the condition occurs to throw the exception.
  */
-public class NullPointerExceptionThrown {
+public class NullPointerExceptionThrownCatch {
 
 	public static void main(String[] args) {
 		headerMsg();
