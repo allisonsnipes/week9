@@ -17,7 +17,7 @@
  *  	2. Write one program per type of exception. Name your programs as follows: NullPointerExceptionCatch, etc.
 
 /*
- * Here I will set up my classes which will be needed to throw the NullPointerExceptionThrown for the Employee class.
+ * Here I will set up my class which will be needed to throw the NullPointerExceptionThrown for the main class.
  */
 
 import java.util.Scanner;

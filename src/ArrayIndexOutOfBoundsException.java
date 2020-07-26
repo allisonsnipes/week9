@@ -23,16 +23,23 @@ public class ArrayIndexOutOfBoundsException {
 
 	public static void main(String[] args) {
 		headerMsg();
+		
+		//create a simple array
+		int[] simpleArray = new int[] {1, 2, 3, 4, 5};
+		
+		int testArray = simpleArray[5];
 	}
 	
 	public static void headerMsg() {
 		System.out.println("\n");
-		System.out.println("+------------------------------------------------------------------------------------+");
-		System.out.println("|                                    Welcome User,                                   |");
-		System.out.println("|      This application will demonstrate how a NullPointerException is generated.    |");
-		System.out.println("|   This type of exception is thrown when an application attempts to use null in a   |");
-		System.out.println("|          case where an object is required. Let's view this example!                |");
-		System.out.println("+------------------------------------------------------------------------------------+");
+		System.out.println("+-----------------------------------------------------------------------------------------+");
+		System.out.println("|                                          Welcome User,                                  |");
+		System.out.println("|            This application will demonstrate how a ArrayIndexOutOfBoundsException is    |");
+		System.out.println("|                generated. This type of exception is thrown when an array was            |");
+		System.out.println("|              accessed with an illegal index. The index was either negative or greater   |");
+		System.out.println("|                     than or equal to the size of the array. Let's begin!                |");
+		System.out.println("+-----------------------------------------------------------------------------------------+");
+		
 		System.out.println("\n");
 	}
 
