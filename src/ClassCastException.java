@@ -23,17 +23,20 @@ public class ClassCastException {
 
 	public static void main(String[] args) {
 		headerMsg();
+		
+		Object random = new Integer(3);
+		System.out.println((String)random);
 
 	}
 	
 	public static void headerMsg() {
 		System.out.println("\n");
-		System.out.println("+------------------------------------------------------------------------------------+");
-		System.out.println("|                                    Welcome User,                                   |");
-		System.out.println("|      This application will demonstrate how a NullPointerException is generated.    |");
-		System.out.println("|   This type of exception is thrown when an application attempts to use null in a   |");
-		System.out.println("|          case where an object is required. Let's view this example!                |");
-		System.out.println("+------------------------------------------------------------------------------------+");
+		System.out.println("+-------------------------------------------------------------------------------------+");
+		System.out.println("|                                    Welcome User,                                    |");
+		System.out.println("|      This application will demonstrate how a ClassCastException is generated.       |");
+		System.out.println("|    This type of exception is thrown to alert that the code attempted to cast an     |");
+		System.out.println("|     object to a subclass of which it is not an instance. Let's view this example!   |");
+		System.out.println("+-------------------------------------------------------------------------------------+");
 		System.out.println("\n");
 	}
 
