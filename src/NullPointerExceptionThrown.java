@@ -17,10 +17,13 @@
  *  	2. Write one program per type of exception. Name your programs as follows: NullPointerExceptionCatch, etc.
 
 /*
- * Here I will set up my classes and subclasses which will be needed to throw the NullPointerExceptionThrown for the Employee class.
+ * Here I will set up my classes which will be needed to throw the NullPointerExceptionThrown for the Employee class.
  */
+
+import java.util.Scanner;
+
 class Name {
-	private String firstName, lastName;
+	public String firstName;
 	
 	public String getF() {
 		return firstName;
@@ -30,66 +33,14 @@ class Name {
 		this.firstName = firstName;
 	}
 	
-	public String getL() {
-		return lastName;
-	}
-	
-	public void setL(String lastName) {
-		this.lastName = lastName;
-	}
-	
-	public Name(String firstName, String lastName) {
-		super();
+	public Name(String firstName) {
 		this.firstName = firstName;
-		this.lastName = lastName;
 	}
 	
 	public String toString() {
-		return firstName + " " + lastName;
+		return firstName;
 	}
 }
-
-class Address{
-	
-}
-
-class Employee {
-	private int id;
-	private Name name;
-	private Address address;
-	
-	public int getId() {
-		return id;
-	}
-	
-	public void setId() {
-		this.id = id;
-	}
-	
-	public Name getName() {
-		return name;
-	}
-	
-	public void setName() {
-		this.name = name;
-	}
-	
-	public Address getAddress() {
-		return address;
-	}
-	
-	public void setAddress() {
-		this.address = address;
-	}
-	
-	public Employee (int id, Name name, Address address) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.address = address;
-	}
-}
-
 
 /*
  * The main method where the condition occurs to throw the exception.
@@ -98,6 +49,18 @@ public class NullPointerExceptionThrown {
 
 	public static void main(String[] args) {
 		headerMsg();
+	
+		Name testName = null;
+		
+		try {
+			String userName = testName.firstName;
+			
+			
+		} catch (NullPointerException e) {
+			System.out.println("There is an error: " + e.getMessage());
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public static void headerMsg() {
